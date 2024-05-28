@@ -12,9 +12,9 @@ macro(define_algebra_example name)
                           ${CMAKE_WORKSPACE_NAME}_algebra
 
                           $<TARGET_NAME_IF_EXISTS:boost_multiprecision>
+                      )
 
-                          ${Boost_LIBRARIES})
-    set_target_properties(algebra_${name}_example PROPERTIES CXX_STANDARD 14)
+set_target_properties(algebra_${name}_example PROPERTIES CXX_STANDARD 14)
 endmacro()
 
 set(EXAMPLES_NAMES
