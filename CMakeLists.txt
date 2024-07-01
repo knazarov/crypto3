@@ -16,9 +16,10 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake"
      "${CMAKE_CURRENT_LIST_DIR}/cmake/packages"
      "${CMAKE_CURRENT_LIST_DIR}/cmake/modules/share/modules/cmake")
 
+find_package(CM REQUIRED)
+
 include(CMConfig)
 include(CMSetupVersion)
-
 cm_workspace(crypto3)
 cm_setup_version(VERSION 0.3.0 PREFIX ${CMAKE_WORKSPACE_NAME})
 
